@@ -5,27 +5,35 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Evaluation Table</title>
+        <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.css">
     </head>
     <body>
         <div class="container">
             <div class="text-center">
-                <h1>EVALUATION TABLE</h1>
+                <h1 id="text">EVALUATION TABLE</h1>
                 <br>
-                <label for="firstValue">COLUMNS</label>
-                <input type="text" id="firstValue">
-                <label for="secondValue">ROWS</label>
-                <input type="text" id="secondValue">
+                <div class="d-flex">
+                    <label for="firstValue"  id="text">COLUMNS :</label>
+                    <input type="text" id="firstValue" class="form-control w-50">
+                </div>
+                <br>
+                <div class="d-flex">
+                    <label for="secondValue"  id="text">ROWS :</label>
+                    <input type="text" id="secondValue" class="form-control w-50">
+                </div>
                 <br><br>
-                <label for="selection">Operations</label>
-                <select name="" id="selection">
-                    <option value="*">Multiply</option>
-                    <option value="+">Addition</option>
-                    <option value="-">Subtraction</option>
-                    <option value="/">Division</option>
-                </select>
-                <br>
-                <button onclick="makeMeATable()">Make me a Table</button>
+                <div class="d-flex">
+                    <label for="selection"  id="text">Operations</label>
+                    <select name="" id="selection" class="form-control w-25">
+                        <option value="*" id="text">Multiply</option>
+                        <option value="+" id="text">Addition</option>
+                        <option value="-" id="text">Subtraction</option>
+                        <option value="/" id="text">Division</option>
+                    </select>
+                    <br>
+                </div>
+                <button onclick="makeMeATable()" class="btn btn-lg btn-info">Make me a Table</button>
             </div>
 
             <table border="1" id="evalTable"></table>
