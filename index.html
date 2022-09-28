@@ -11,23 +11,21 @@
     <body>
         <div class="container">
             <div class="text-center">
-                <h1 id="text">EVALUATION TABLE</h1>
+                <h1>EVALUATION TABLE</h1>
                 <br>
 
-                <div class="d-flex">
-                    <label for="firstValue"  id="text">Columns :</label>
-                    <input type="text" id="firstValue" class="form-control w-50">
+                <div class="d-flex m-2">
+                    <label for="firstValue" class="text-light" id="text">Columns :</label>
+                    <input type="text" id="firstValue" class="form-control w-50" placeholder="No. of columns here">
                 </div>
-                <br>
                 
-                <div class="d-flex">
-                    <label for="secondValue"  id="text">Rows :</label>
-                    <input type="text" id="secondValue" class="form-control w-50">
+                <div class="d-flex m-2">
+                    <label for="secondValue" class="text-light" id="text">Rows :</label>
+                    <input type="text" id="secondValue" class="form-control w-50" placeholder="No. of rows here">
                 </div>
-                <br>
 
                 <div class="d-flex">
-                    <label for="selection"  id="text">Operations :</label>
+                    <label for="selection" class="text-light" id="text">Operations :</label>
                     <select name="" id="selection" class="form-control w-25">
                         <option value="*" id="text">Multiply</option>
                         <option value="+" id="text">Addition</option>
@@ -35,7 +33,7 @@
                         <option value="/" id="text">Division</option>
                     </select>
                 </div>
-                <br><br>
+                <br>
                 <button onclick="makeMeATable()" class="btn btn-lg btn-info">Make me a Table</button>
             </div>
 

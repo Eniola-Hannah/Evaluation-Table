@@ -1,5 +1,11 @@
+body{
+    background-image: url(media/pexels-pixabay-531880.jpg);
+    background-position: center;
+    height: 100vh;
+}
 #text{
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
-    font-weight: 400;
+    font-weight: 500;
+    font-size: x-large;
 }
