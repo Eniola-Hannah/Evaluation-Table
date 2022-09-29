@@ -15,13 +15,13 @@
                 <br>
 
                 <div class="d-flex m-2">
-                    <label for="firstValue" class="text-light" id="text">Columns :</label>
-                    <input type="text" id="firstValue" class="form-control w-50" placeholder="No. of columns here">
-                </div>
-                
-                <div class="d-flex m-2">
-                    <label for="secondValue" class="text-light" id="text">Rows :</label>
+                    <label for="firstValue" class="text-light" id="text">Rows :</label>
                     <input type="text" id="secondValue" class="form-control w-50" placeholder="No. of rows here">
+                </div>
+
+                <div class="d-flex m-2">
+                    <label for="secondValue" class="text-light" id="text">Columns :</label>
+                    <input type="text" id="firstValue" class="form-control w-50" placeholder="No. of columns here">
                 </div>
 
                 <div class="d-flex">
@@ -34,10 +34,10 @@
                     </select>
                 </div>
                 <br>
-                <button onclick="makeMeATable()" class="btn btn-lg btn-info">Make me a Table</button>
+                <button onclick="makeMeATable()" class="btn btn-lg btn-info m-2">Make me a Table</button>
             </div>
 
-            <table border="1" id="evalTable"></table>
+            <table id="evalTable" class="table table-bordered table-dark text-light table-hover"></table>
         </div>
 
         

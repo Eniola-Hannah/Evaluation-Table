@@ -1,38 +1,34 @@
 const makeMeATable=()=>{
-    if (firstValue.value==""&&secondValue=="") {
+    if (firstValue.value==""||secondValue=="") {
         alert("Input a value to be evaluated")
     }else{
         evalTable.innerHTML = ""
-        for (var i = 1; i <= firstValue.value; i++) { 
-            let result = "<tr>"
-            for (var j = 1; j <= secondValue.value; j++) {  
-                evaluation = `${i} * ${j} = ${i*j}`
-                result += `
-                    <td>${evaluation}</td>`
-                result += "</tr>"
-                evalTable.innerHTML += result
+        for (let i = 1; i <= secondValue.value; i++) { 
+            result = "<tr>"
+            for (let j = 1; j <= firstValue.value; j++) {  
                 if (selection.value == "*") {
-    
+                    result += `
+                    <td>${i} * ${j} = ${i*j}</td>
+                    `
                 }
                 else if (selection.value == "+") {
-                    evaluation = `${i} + ${j} = ${i+j}`
                     result += `
-                        <td>${evaluation}</td>`
-                    result += "</tr>"
-                    evalTable.innerHTML += result
-    
+                    <td>${i} + ${j} = ${i+j}</td>
+                    `
                 }
                 else if (selection.value == "-") {
-                    evaluation = `${i} - ${j} = ${i-j}`
-                    evalTable.innerHTML += `
-                        <td> ${evaluation}</td>`
+                    result += `
+                    <td>${i} - ${j} = ${i-j}</td>
+                    `
                 }
                 else if (selection.value == "/") {
-                    evaluation = `${i} / ${j} = ${i/j}`
-                    evalTable.innerHTML += `
-                        <td> ${evaluation}</td>`
+                    result += `
+                    <td>${i} / ${j} = ${i/j}</td>
+                    `
                 }
             } 
+            result += "</tr>"
+            evalTable.innerHTML += result
         }
     }
 }

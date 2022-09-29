@@ -3,9 +3,22 @@ body{
     background-position: center;
     height: 100vh;
 }
+select{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: 500;
+}
 #text{
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
     font-weight: 500;
     font-size: x-large;
+}
+#evalTable{
+    font-size: larger;
+    font-weight: 500;
+}
+
+@media only screen and (max-width:800px) {
+    
 }
